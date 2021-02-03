@@ -1,5 +1,8 @@
 package test;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * @description 生成FireNet的所有可能的测试数据
  * @author JoyBlack
@@ -13,11 +16,19 @@ public class FireNetGenerate {
     private static final char CITY_WALL = 'X';
 
     public static void main(String[] args) {
-        int matrixSize = 4;
+        Queue<Integer> queue = new LinkedList<>();
+        queue.offer(1);
+        queue.offer(2);
+        queue.offer(3);
+        queue.offer(4);
+        queue.offer(5);
+        queue.offer(6);
 
-        for (int n = 1; n <= 4; n++) {
-            // 生成可能的N胃
-
-        }
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
     }
 }

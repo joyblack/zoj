@@ -37,4 +37,19 @@ public class CommonUtils {
             return true;
         }
     }
+
+    /**
+     * @description 从char数组中寻找第一个出现的字符的下标，找不到返回-1
+     * @author JoyBlack
+     * @date 2021/1/28
+     */
+    private static int find(char[] array, char c) {
+        int index = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == c) {
+                return i;
+            }
+        }
+        return index;
+    }
 }
